@@ -1,5 +1,5 @@
 Datasetul utilizat în acest proiect este cel al diamantelor, disponibil la adresa: "https://raw.githubusercontent.com/mwaskom/seaborn-data/master/diamonds.csv".
-Obiectivul proiectului este predictia pretului unui diamentul pe baza unor caracteristici fizice și cantitative, precum dimensiunile sale (x, y, z) și alte atribute relevante.
+Obiectivul proiectului este predictia pretului unui diament pe baza unor caracteristici fizice și cantitative, precum dimensiunile sale (x, y, z) și alte atribute relevante.
 
 În etapa de preprocesare, datasetul a fost analizat pentru identificarea valorilor lipsă sau aberante. În urma verificărilor, s-a constatat că datele sunt complete și nu necesită curățare suplimentară.
 
