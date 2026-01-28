@@ -11,7 +11,9 @@ Ulterior, a fost aplicată regularizarea de tip LASSO, cu scopul de a reduce pot
 
 În final, a fost utilizată Regresia Polinomială de gradul 2, care a condus la o îmbunătățire a performanței modelului. Astfel, valoarea RMSE a scăzut, iar coeficientul R² a crescut la 0,87, indicând o capacitate mai bună a modelului de a surprinde relațiile neliniare dintre variabilele explicative și prețul diamantelor.
 
-În etapa finală a proiectului, a fost utilizat modelul XGBRegressor, integrând atât variabilele categoriale (cut, color, clarity), cât și variabilele numerice. Deoarece modelul necesită date numerice, variabilele categoriale au fost transformate prin One-Hot Encoding. Această abordare s-a dovedit extrem de eficientă, modelul obținând performanțe foarte ridicate, cu un RMSE de aproximativ 559 și un coeficient de determinare R² de 0.98, indicând o capacitate excelentă de predicție a prețului diamantelor
+Apoi am folosit GradientBoosting integrând atât variabilele categoriale (cut, color, clarity), cât și variabilele numerice. Deoarece modelul necesită date numerice, variabilele categoriale au fost transformate prin One-Hot Encoding. S-a dovedit un succes deoarece R2 a devenit 0,95.
+
+În etapa finală a proiectului, a fost utilizat modelul XGBRegressor. Această abordare s-a dovedit extrem de eficientă, modelul obținând performanțe foarte ridicate, cu un RMSE de aproximativ 559 și un coeficient de determinare R² de 0.98, indicând o capacitate excelentă de predicție a prețului diamantelor
 
 
 1. Linear Regression cu un singur feature("carat")
@@ -30,6 +32,10 @@ Ulterior, a fost aplicată regularizarea de tip LASSO, cu scopul de a reduce pot
     R² = 0.87
     RMSE = 1391
 
-5. XGBRegressor
+5.GradientBoosting
+   R² = 0.95
+   RMSE = 846
+
+6. XGBRegressor
     R² = 0.98
     RMSE = 559
