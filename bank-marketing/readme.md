@@ -13,4 +13,8 @@ Am ales sa folosesc "Logistic Regression" deoarece e un model care e folosit pen
 
 4. Accuracy atat pe datele de pe train cat si pe datele de test este de "0,77" ceea ce mi se pare un rezultat bun, se poate mai bine dar e ok deoarece e > 0.5.
 
-5. Pentru a imbunatati performanta as folosi un alt model cum ar fi Randorm Forest, unde nu este nevoie de scalarea datelor si poti avea atat features categorice cat si numerice, si m-as juca cu GridSearchCv pentru a gasi cei mai optimi parametrii.Iar apoi as incerca XGBoost pentru a vedea daca performanta e mult mai buna.
+5. Pentru a imbunatati performanta as folosi un alt model cum ar fi Randorm Forest, unde nu este nevoie de scalarea datelor si poti avea atat features categorice cat si numerice, si m-as juca cu GridSearchCv pentru a gasi cei mai optimi parametrii.
+Dupa ce am folosit modelul Random Forest se poate observa ca acuratetea creste la "0.8110" si ROC-AUC la "0.8861", iar in urma matricei de confuzie se poate observa ca 194 de clienti au fost identificati ca nu isi vor deschide deposit, dar ei defapt au optat pentru deposit. Deci sunt 194 de clienti pierduti, iar 228 vor fi resunati pentru ca au fost identificati ca isi vor deschide deposit dar ei defapt nu isi doresc deposit.
+
+Acuratetea si ROC-AUC se imbunatesc cu ajutorul lui XG-Boost, iar in urma matricei de confuzie putem spune  ca 193 de clienti au fost identificati ca nu isi vor deschide deposit, dar ei defapt au optat pentru deposit. Deci sunt 193 de clienti pierduti, iar 223 vor fi resunati pentru ca au fost identificati ca isi vor deschide deposit dar ei defapt nu isi doresc deposit.
+
